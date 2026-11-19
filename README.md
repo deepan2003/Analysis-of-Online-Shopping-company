@@ -146,20 +146,3 @@ DAX measures and visual settings.
 - **Data quality guards**: canceled/unavailable orders excluded from revenue and RFM,
   NULL delivery dates handled, `NULLIF` on empty CSV timestamps, row-count audit after
   the load.
-
----
-
-## Notes and limitations
-
-- **Dataset**: the Olist CSVs are not committed (130 MB). Download them from
-  [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-  and place them in `Dataset/`.
-- **MariaDB vs MySQL**: Oracle's MySQL ZIP download is blocked from this machine
-  (HTTP 403) and a service install needs administrator rights, so the project uses
-  portable MariaDB 11.4 - the MySQL-compatible fork. All SQL here is valid MySQL 8.0.
-- **Free-text reviews** contain embedded newlines and backslashes that make
-  `LOAD DATA` merge rows; `sql/prep_reviews.py` normalises them first (99,224 rows).
-- **Currency**: values are Brazilian reais (R$), the dataset's native currency.
-- The `.pbix` file must be built once by hand in Power BI Desktop (reports are not
-  scriptable). The rendered pages, PDF and every data source are in the repo, so the
-  report can be reproduced exactly with the guide.
