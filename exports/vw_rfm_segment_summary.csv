@@ -1,0 +1,10 @@
+rfm_segment,customers,pct_of_customers,total_revenue,pct_of_revenue,avg_customer_value,avg_orders,avg_days_since_last_order
+At Risk,22563,23.75,6806766.50,43.25,301.68,1.05,339.2
+Cannot Lose Them,100,0.11,49697.02,0.32,496.97,3.25,318.4
+Champions,18,0.02,17984.31,0.11,999.13,5.11,46.7
+Cooling Off,19034,20.04,3176690.54,20.18,166.90,1.00,137.0
+Hibernating,23583,24.83,1306423.66,8.30,55.40,1.00,343.0
+Loyal Customers,107,0.11,49747.20,0.32,464.93,3.23,101.0
+New Customers,17073,17.97,2767465.80,17.58,162.10,1.00,48.0
+Others,11981,12.61,1409275.16,8.95,117.63,1.07,331.3
+Promising,530,0.56,155086.82,0.99,292.62,2.00,48.6

@@ -1,0 +1,27 @@
+# local database engine and downloads (rebuild with tools/README_DB.md)
+tools/mariadb-11.4.5-winx64/
+tools/mariadb.zip
+
+# raw dataset is distributed by Kaggle, not committed
+Dataset/
+*.csv.tmp
+
+# large generated exports
+exports/vw_order_facts.csv
+exports/vw_customer_rfm.csv
+exports/vw_delivery_facts.csv
+exports/vw_geo_zip.csv
+exports/olist_order_reviews_clean.csv
+exports/rfm_output.txt
+exports/cohort_output.txt
+exports/logistics_output.txt
+exports/revenue_output.txt
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# office temp files
+~$*
+*.pbix.tmp
