@@ -16,8 +16,8 @@ if ($LASTEXITCODE -eq 0) {
     exit 0
 }
 
-Start-Process -FilePath $mysqld -ArgumentList "--defaults-file=$ini" -WindowStyle Hidden
-for ($i = 0; $i -lt 30; $i++) {
+Start-Process -FilePath $mysqld -ArgumentList "--defaults-file=`"$ini`"" -WindowStyle Hidden
+for ($i = 0; $i -lt 45; $i++) {
     Start-Sleep -Seconds 1
     & $mysqladmin --port=3307 -u root -proot ping 2>$null | Out-Null
     if ($LASTEXITCODE -eq 0) {
@@ -25,5 +25,5 @@ for ($i = 0; $i -lt 30; $i++) {
         exit 0
     }
 }
-Write-Error "Database did not start within 30 seconds. Check $mar\data\*.err"
+Write-Error "Database did not start within 45 seconds. Check $mar\data\*.err"
 exit 1

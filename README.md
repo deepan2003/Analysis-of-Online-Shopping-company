@@ -4,6 +4,8 @@ End-to-end analysis of the **Olist Brazilian e-commerce dataset** (99,441 orders
 Sep 2016 - Aug 2018): raw CSVs → MySQL database → SQL analysis → three-page
 executive dashboard.
 
+The project root is `D:\Analyst project 1` (raw CSVs stay in `D:\Analyst project 1\Dataset`).
+
 The project answers three business questions:
 
 | Question | Script | Dashboard page |

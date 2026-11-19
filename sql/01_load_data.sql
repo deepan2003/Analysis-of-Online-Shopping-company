@@ -84,7 +84,7 @@ IGNORE 1 LINES
 -- ------------------------------------------------------------
 -- 5. order_reviews (99,224 rows) - cleaned copy, see header note
 -- ------------------------------------------------------------
-LOAD DATA LOCAL INFILE 'C:/Users/deepa/Documents/ecommerce-sql-powerbi/exports/olist_order_reviews_clean.csv'
+LOAD DATA LOCAL INFILE 'D:/Analyst project 1/exports/olist_order_reviews_clean.csv'
 INTO TABLE order_reviews
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' ESCAPED BY ''

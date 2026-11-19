@@ -33,3 +33,4 @@ python (Join-Path $PSScriptRoot 'export_views.py')
 python (Join-Path $root 'dashboard\build_dashboard.py')
 python (Join-Path $root 'dashboard\screenshot.py')
 Write-Host "Done. Open dashboard\page1.html or dashboard\Olist_Dashboard.pdf"
+exit 0
